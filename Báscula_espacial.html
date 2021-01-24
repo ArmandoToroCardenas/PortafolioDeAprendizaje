@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta description="flujo y condicionales"
+    <title>TENGA LA BIENVENIDA</title>
+      <style type="text/css">
+      body
+      {background: #003999; font-family: arial; font-size: 20;}
+      </style>
+  </head>
+<body>
+  <br><br><br>
+  <h1 align ="center">LE PRESENTO ESTA PAGINITA PARA QUE LA REVISE :)</h1>
+    <br><br><br><br><br><p>Aquí descubre <strong>tu peso</strong> en otros planetas de la vía láctea. Espero que le guste.</p>
+    <p>Para esto debiste de indicar <strong>tu peso</strong></p>
+      <script type="text/javascript">
+      let usuario = prompt("¿Cual es tu peso?");
+      let planeta = prompt("Elige tu planeta: \n 1 es Marte, 2 es Mercurio, 3 es Jupiter, 4 es Venus, 5 es Saturno, 6 es Urano, 7 es Neptuno, 8 es la Luna terrestre.");
+      let g_marte = 3.7;
+      let g_mercurio = 3.7;
+      let g_jupiter = 28.4;
+      let g_venus = 8.87;
+      let g_saturno = 10.44;
+      let g_urano = 8.7;
+      let g_neptuno = 11.15;
+      let g_luna_terrestre = 1.6;
+      let peso_final;
+      let nombre;
+      if (planeta == 1) {peso_final = peso * g_marte / g_tierra; nombre ="Marte";
+      }
+      else if (planeta == 2) {peso_final = peso * g_mercurio / g_tierra; nombre = "Mercurio";
+      }
+      else if (planeta == 3) {peso_final = peso * g_jupiter / g_tierra; nombre = "Jupiter";
+      }
+      else if (planeta == 4) {peso_final = peso * g_venus / g_tierra; nombre = "Venus";
+      }
+      else if (planeta == 5) {peso_final = peso * g_saturno / g_tierra; nombre = "Saturno";
+      }
+      else if (planeta == 6) {peso_final = peso * g_urano / g_tierra; nombre = "Urano";
+      }
+      else if (planeta == 7) {peso_final = peso * g_neptuno / g_tierra; nombre ="Neptuno";
+      }
+      else if (planeta == 8) {peso_final = peso * g_luna_terrestre / g_tierra; nombre ="Luna Terrestre";
+      }
+      else peso_final = 0101010101; nombre = "Asteroide B 612";
+
+            peso_final = parseFloat(peso_final);
+      document.write("Tu peso en este <strong>" + nombre + " </strong>  es <strong>" + peso_final + " Kilos</strong>");
+  //PERO parece que me quedó grande por hoy, ya mañana será otro día.
+    </script>
+  </body>
+</html>
